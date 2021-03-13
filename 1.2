@@ -1,0 +1,28 @@
+//modificaçoes feitas com base no codigo usado na aula 2(1/6) retangulo em java
+public class Reactapp{
+    public static void main (String[]args){
+        Rect r1 = new Rect(1,1,10,10,5,5);
+
+        r1.print();
+    }
+}
+class Rect{
+    int x, y;
+    int w, h;
+    int area();
+    int dx, dy;
+    Rect(int x, int y, int w, int h, int dx, int dy){
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+        this.dx = dx;
+        this.dy = dy;
+
+    }
+    this.area = x, y;
+    void drag (int dx, int dy){
+        this.x = x + dx;
+        this.y = y + dy;
+    }
+}
