@@ -1,0 +1,33 @@
+//C para linha curva
+typedef struct {
+    int x1, y1, ctrlx1 ;
+    int ctrly1,ctrlx2,ctrly2, x2, y2;
+}Rect;
+
+void main (void){
+    Rect l1 = {1,1,2,2,2,4,4};
+    print(&l1);
+}
+
+//Java para elipce
+
+public class Reactapp{
+    public static void main (String[]args){
+        Rect e1 = new Rect(1,1,10,10);
+        e1.print();
+    }
+}
+class Rect{
+    int x, y;
+    int w, h;
+    Rect(int x,int y,int w, int h){
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+    }
+    void print(){
+        System.out.format("Elipse de tamanho(%d,%d) na posicao (%d,%d).\n");
+            this.w, this.h, this.x, this.y;
+    }
+}
