@@ -5,13 +5,8 @@ import java.awt.*;
 public class Line extends Figure {
 
     public Line (int x, int y, int w, int h, int r, int g, int b){
-        this.x = x;
-        this.y = y;
-        this.w = w;
-        this.h = h;
-        this.r = r;
-        this.g = g;
-        this.b = b;
+        super(x,y,w,h,r,g,b);
+        
 
     }
     public void print () {
@@ -21,7 +16,7 @@ public class Line extends Figure {
     public void paint (Graphics g){
         Graphics2D g2d = (Graphics2D) g;
         g2d.setColor(new Color(this.r,this.g,this.b));
-	g2d.drawLine(this.x, this.y, this.w, this.h);
+	    g2d.drawLine(this.x, this.y, this.w, this.h);
 	
 
     }

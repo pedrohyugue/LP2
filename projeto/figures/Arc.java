@@ -6,15 +6,10 @@ public class Arc extends Figure {
 	int sAngle, aAngle;
 
 	public Arc (int x, int y, int w, int h, int sAngle, int aAngle, int r, int g, int b, int cr, int cg, int cb) {
-		this.x = x;
-		this.y = y;
-		this.w = w;
-		this.h = h;
+        super(x,y,w,h,r,g,b);
+		
 		this.sAngle = sAngle;
 		this.aAngle= aAngle;
-		this.r = r;
-        this.g = g;
-        this.b = b;
         this.cr = cr;
         this.cg = cg;
         this.cb = cb;

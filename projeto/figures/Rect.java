@@ -5,17 +5,10 @@ import java.awt.*;
 public class Rect extends Figure {
 
     public Rect (int x, int y, int w, int h, int r, int g, int b, int cr, int cg, int cb){
-        this.x = x;
-        this.y = y;
-        this.w = w;
-        this.h = h;
-        this.r = r;
-        this.g = g;
-        this.b = b;
+        super(x,y,w,h,r,g,b);
         this.cr = cr;
         this.cg = cg;
         this.cb = cb;
-
     }
     public void print () {
         System.out.format("Retangulo de tamanho (%d,%d) na posicao (%d,%d).\n",
