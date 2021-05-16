@@ -34,7 +34,7 @@ class PackFrame extends JFrame {
 	                for (Figure fig: figs) {
 	                    int x4 = fig.x + fig.w;
 	                    int y4 = fig.y + fig.h;
-	                    if ( (fig.x<=evt.getX()) && (x4>= evt.getX()) && (fig.y<=evt.getY()) && (y4>= evt.getY())){
+	                    if (fig.clicked(evt.getX(), evt.getY())){
 	                        focus	=	fig;
 	                     
 	                	}
@@ -56,8 +56,7 @@ class PackFrame extends JFrame {
 	                    Point pontoat = evt.getPoint();
 	                    int px = (int)(pontoat.getX() - pontoant.getX());
 	                    int py = (int)(pontoat.getY() - pontoant.getY());
-	                    focus.x = (int)((focus.x) + (px));
-	                    focus.y = (int)((focus.y) + (py));
+                        focus.drag(px, py);
 
 	                    pontoant = pontoat;
 	                    repaint();
